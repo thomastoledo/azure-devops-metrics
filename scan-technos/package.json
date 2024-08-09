@@ -1,0 +1,23 @@
+{
+  "name": "scan-technos",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "./dist/app.js",
+  "scripts": {
+    "build": "npx tsc **/*.ts --module commonjs --outDir ./dist",
+    "start": "npm run build && node ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-devops-node-api": "10.2.1"
+  },
+  "volta": {
+    "node": "20.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.14",
+    "typescript": "^5.5.3"
+  }
+}
